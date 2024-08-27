@@ -7,7 +7,6 @@
             {{.}}
           </div>
         {{ end }}
-
         <div class="posts-list">
           {{ $pag := .Paginate (where site.RegularPages "Type" "in" site.Params.mainSections) }}
           {{ range $pag.Pages }}
